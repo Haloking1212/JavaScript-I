@@ -31,8 +31,11 @@ const Kennan = {
   email: "kdiben1@tinypic.com",
   firstName:"Kennan", 
   gender: "M",
-  speak: "Hello, my name is Kennan!"
+  speak: function() {
+    return "Hello, my name is " + this.firstName;
+  }
 };
+
 const Keven = {
   id:3,
   email: "kmummery2@wikimedia.org",
@@ -83,7 +86,7 @@ console.log(Antonietta.gender);
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
 // console.log(kennan.speak());
 
-console.log(Kennan.speak);
+console.log(Kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
 //console.log(antonietta.multiplyNums(3,4));
