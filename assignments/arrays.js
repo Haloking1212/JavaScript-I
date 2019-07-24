@@ -71,7 +71,6 @@ function cars (id) {
             return "car " + car.id + " is a " + car.car_year + " " + car.car_make + " " + car.car_model;
         }
     }
-    return undefined;
 } 
 
 console.log(cars(33));
